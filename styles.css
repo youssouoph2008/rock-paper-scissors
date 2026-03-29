@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Finger+Paint&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(29, 29, 37);
+}
+
+.container,
+.title,
+#rpsButtons,
+.round-container,
+.player-container,
+.versus-container,
+.modal {
+  display: flex;
+}
+
+.title {
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  font-size: 40px;
+}
+
+h2{
+  font-size: 32px;
+  color: blue;
+}
+
+.container, .modal {
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto;
+  background-color: aliceblue;
+  width: fit-content;
+  height: fit-content;
+  padding: 42px;
+  gap: 30px;
+}
+
+.round-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  
+}
+
+.round-count {
+  background-color: white;
+  padding: 2px 6px;
+  border: 1px solid black;
+  /* font-size: 19px */
+}
+
+.player-container {
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.stats{
+  font-size: 22px;
+  font-weight: 600;
+}
+
+#rpsButtons {
+  display: flex;
+  justify-content: space-between;
+  width: fit-content;
+  gap: 15px;
+}
+
+.choice-buttons {
+  padding: 2px 12px;
+  font-size: 16px;
+}
+
+.scissors{
+  width: 80px;
+}
+
+.versus-container{
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.versus{
+  font-family: "Finger Paint";
+  font-weight: 600;
+  color: red;
+}
+
+.modal-container{
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.3);
+  top: 0;
+  left: 0;
+  /* opacity: 0; */
+}
+
+.choice-result{
+  text-align: center;
+}
+
+.score-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  gap: 6px;
+}
+
+.score-board{
+  display: flex;
+  justify-content: space-evenly;
+  width: 500px;
+}
+
+.score{
+  text-align: center;
+}
+
+.score-board h3,
+.score-board p {
+  font-size: 22px;
+}
+
+#nextRound {
+  padding: 4px 16px;
+  font-size: larger;
+}
+
+.modal{
+  gap: 36px;
+}
+
+.modal-container {
+  opacity: 0;
+  pointer-events: none;
+  /* transition: opacity 0.3s ease; */
+}
+
+.modal-container.show{
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.result{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.fight-result {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.score-text{
+  position: relative;
+  width: fit-content;
+}
+
+.plus-one   {
+  color: green;
+  font-weight: 600;
+  font-size: 12px;
+  position: sticky;
+  top: 0;
+  float: right;
+  display: none;
+}
+
+.plus-one.show-plus{ 
+  display: block;
+}
+
+.score{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

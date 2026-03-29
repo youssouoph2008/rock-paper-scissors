@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>unfinish -_-</p>
+    <div class="title">
+      <h1>Rock Paper Scissors!</h1>
+      <p>(Best of 5)</p>
+    </div>
+    
+    <div class="round-container">
+      <h2>Round <span class="round-count" id="roundCount">1</span></h2>
+      <div class="versus-container">
+        <div class="player-container">
+          <p>(Choose your weapon)</p>
+          <div id="rpsButtons">
+            <button type="button" class="choice-buttons" id="rock"><img class="choice rock" src="img/player_rock.PNG"></button>
+            <button type="button" class="choice-buttons" id="paper"><img class="choice paper" src="img/player_paper.PNG"></button>
+            <button type="button" class="choice-buttons" id="scissors"><img class="choice scissors" src="img/player_scissors.PNG"></button>
+          </div>
+          <p class="player-stats stats">You: <span id="playerScore">0</span></p>
+        </div>
+        <p class="versus">VS</p>
+        <p class="computer-stats stats">Computer: <span id="computerScore">0</span></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-container">
+    <div class="modal">
+      <div class="result">
+        <h1 id="resultTitle">You win the round!</h1>
+        <div class="fight-result">
+          <div class="choice-result">
+            <p>You</p>
+            <img id="playerChoice" src="./img/tijeras.savif">
+          </div>
+          <div class="choice-result">
+            <p>Computer</p>
+            <img id="computerChoice" src="./img/papel.png">
+          </div>
+        </div>
+      </div>
+      <div class="score-container">
+        <h2>Score</h2>
+        <div class="score-board">
+          <div class="score">
+            <h3>You</h3>
+            <p class="score-text">
+              <span id="playerScoreModal">0</span>
+              <span class="player plus-one">+1</span>
+            </p>
+          </div>
+          <div class="score">
+            <h3>Computer</h3>
+            <p class="score-text">
+              <span id="computerScoreModal">0</span>
+              <span class="computer plus-one">+1</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button type="button" id="nextRound">Next round</button>
+    </div>
+  </div>
+  
+
+
+  <script src="./script.js"></script>
+</body>
+</html>
